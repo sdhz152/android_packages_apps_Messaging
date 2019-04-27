@@ -229,7 +229,7 @@ public class BugleNotifications {
          // Always have to set the small icon or the notification is ignored
         noti.setSmallIcon(R.drawable.ic_sms_multi_light);
         int defaults = 0;
-         final Uri ringtoneUri = getNotificationRingtoneUriForConversationId(conversationId);
+         // final Uri ringtoneUri = getNotificationRingtoneUriForConversationId(conversationId);
         final BuglePrefs prefs = Factory.get().getApplicationPrefs();
         final String prefKey = context.getString(R.string.notification_vibration_pref_key);
          final boolean shoudVib = prefs.getBoolean(prefKey, context.getResources().getBoolean(
